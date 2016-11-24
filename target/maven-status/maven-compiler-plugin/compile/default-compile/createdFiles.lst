@@ -1,0 +1,5 @@
+com\shitx\hadoop\mapper\TestMapper.class
+com\shitx\hadoop\control\TestController.class
+com\shitx\hadoop\reducer\TestReducer.class
+com\shitx\hadoop\utils\PropertyUtils.class
+com\shitx\hadoop\processor\TestProcessor.class

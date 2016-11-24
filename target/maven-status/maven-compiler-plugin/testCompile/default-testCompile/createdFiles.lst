@@ -1,0 +1,4 @@
+com\shitx\hadoop\WordCount$IntSumReducer.class
+com\shitx\hadoop\WordCount$TokenizerMapper.class
+com\shitx\hadoop\WordCount.class
+com\shitx\hadoop\processor\JunitProcessor.class

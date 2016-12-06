@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.lib.input.NLineInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,6 +48,9 @@ public class TestProcessor {
 		
 		job.setOutputKeyClass(Text.class); //设置该job最终的输出key格式
 		job.setOutputKeyClass(Text.class); //该job最终的输出value格式
+		
+		//设置每个N行一个map
+		job.getConfiguration().set(NLineInputFormat.LINES_PER_MAP, "500" );
 		
 		//设置输出路径
 		logger.info(properties.getProperty("hadoop.ip"));

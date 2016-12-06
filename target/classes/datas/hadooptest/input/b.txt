@@ -1,0 +1,3 @@
+Hello Hadoop Goodbye Hadoop
+Hadoop learning
+Error

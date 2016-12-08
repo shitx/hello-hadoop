@@ -138,7 +138,7 @@ public class WordCount {
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
 		job.setPartitionerClass(IntPartion.class);
-		job.setNumReduceTasks(1);
+		job.setNumReduceTasks(3);
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
 		//    job.waitForCompletion(true);
